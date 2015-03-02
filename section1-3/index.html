@@ -20,5 +20,13 @@
     <div ng-if="enableMessage">
       Hello, world!
     </div>
+
+    <!-- リスト１．６ -->
+    <div ng-init="items = ['AngularJS', 'Backbone.js', 'Ember.js','Knockout.js']"></div>
+    <ul>
+      <li ng-repeat="item in items">
+        {{item}}
+      </li>
+    </ul>
   </body>
 </html>
