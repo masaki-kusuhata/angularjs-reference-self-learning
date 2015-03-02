@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="angular.js"></script>
+  </head>
+  <body>
+    <!-- リスト１．２ -->
+    <div>
+      {{1+1}}
+    </div>
+
+    <!-- リスト１．４ -->
+    <div ng-init="variable=42"/>
+    <div>
+      {{variable}}
+    </div>
+
+    <!-- リスト１．５ -->
+    <div ng-if="enableMessage">
+      Hello, world!
+    </div>
+
+    <!-- リスト１．６ -->
+    <div ng-init="items = ['AngularJS', 'Backbone.js', 'Ember.js','Knockout.js']"></div>
+    <ul>
+      <li ng-repeat="item in items">
+        {{item}}
+      </li>
+    </ul>
+
+    <!-- リスト１．８ -->
+    <input type="TEXT" ng-model="message">
+    <div>
+      {{message}}
+    </div>
+
+  </body>
+</html>
