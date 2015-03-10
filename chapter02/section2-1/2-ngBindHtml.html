@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="myModule">
+  <head>
+    <title>ngBindHtml</title>
+    <script src="../../angular/angular.js" charset="utf-8"></script>
+    <script src="../../angular/angular-sanitize.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <input type="text" ng-model="myName">
+    <p ng-bind="myName"></p>
+
+    <script charset="utf-8">
+      angular.module('myModule', ['ngSanitize']);
+    </script>
+  </body>
+</html>
